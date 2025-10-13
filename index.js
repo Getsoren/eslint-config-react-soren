@@ -1,5 +1,3 @@
-"use strict";
-
 module.exports = {
   extends: [
     "react-app",
@@ -46,7 +44,6 @@ module.exports = {
         "newlines-between": "never"
       }
     ],
-    "import/prefer-default-export": "off",
     "indent": "off",
     "jsx-a11y/anchor-is-valid": [
       "error",
@@ -173,61 +170,61 @@ module.exports = {
       "always"
     ]
   },
-  "overrides": [
+  overrides: [
     {
-      "files": [
+      files: [
         "*.ts",
         "*.tsx"
       ],
-      "rules": {
+      rules: {
         "no-undef": "off"
       }
     },
     {
-      "files": [
+      files: [
         "*.test.@(js|jsx|ts|tsx)",
         "*.stories.tsx",
         "index.@(js|jsx|ts|tsx)",
         "vite.config.ts",
       ],
-      "rules": {
+      rules: {
         "no-restricted-imports": "off"
       }
     },
     {
-      "files": [
+      files: [
         "next-env.d.ts",
         "react-app-env.d.ts",
         "vite-env.d.ts"
       ],
-      "rules": {
+      rules: {
         "spaced-comment": "off"
       }
     },
     {
-      "files": [
+      files: [
         "src/pages/_app.tsx",
         "**/stories/**",
         "*.stories.tsx"
       ],
-      "rules": {
+      rules: {
         "react/jsx-props-no-spreading": "off"
       }
     },
     {
-      "files": [
+      files: [
         "*.test.js",
         "*.spec.js",
         "*.cy.js",
         "*.cy.ts"
       ],
-      "rules": {
+      rules: {
         "no-unused-expressions": "off"
       }
     },
     {
-      "files": "./src/api/**/*.ts",
-      "rules": {
+      files: "./src/api/**/*.ts",
+      rules: {
         "no-duplicate-imports": "off",
         "no-redeclare": "off",
         "sort-keys": "off",
@@ -249,11 +246,20 @@ module.exports = {
       }
     },
     {
-      "files": [
+      files: [
         "e2e/**"
       ],
-      "rules": {
+      rules: {
         "all": "off"
+      }
+    },
+    {
+      files: [
+        "*.jsx",
+        "*.tsx"
+      ],
+      rules: {
+        "import/prefer-default-export": "off"
       }
     }
   ]
