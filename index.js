@@ -46,6 +46,7 @@ module.exports = {
         "newlines-between": "never"
       }
     ],
+    "import/prefer-default-export": "off",
     "indent": "off",
     "jsx-a11y/anchor-is-valid": [
       "error",
