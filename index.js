@@ -44,6 +44,7 @@ module.exports = {
         "newlines-between": "never"
       }
     ],
+    "import/prefer-default-export": "off",
     "indent": "off",
     "jsx-a11y/anchor-is-valid": [
       "error",
@@ -259,7 +260,7 @@ module.exports = {
         "*.tsx"
       ],
       rules: {
-        "import/prefer-default-export": "off"
+        "import/prefer-default-export": "error"
       }
     }
   ]
