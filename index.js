@@ -150,6 +150,7 @@ module.exports = {
       }
     ],
     "react/jsx-pascal-case": "error",
+    "react/no-array-index-key": "off",
     "react/react-in-jsx-scope": "off",
     "react/require-default-props": "off",
     "sort-keys": [
