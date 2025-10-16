@@ -170,7 +170,8 @@ module.exports = {
     "spaced-comment": [
       "error",
       "always"
-    ]
+    ],
+    "react/jsx-props-no-spreading": "off"
   },
   overrides: [
     {
@@ -201,16 +202,6 @@ module.exports = {
       ],
       rules: {
         "spaced-comment": "off"
-      }
-    },
-    {
-      files: [
-        "src/pages/_app.tsx",
-        "**/stories/**",
-        "*.stories.tsx"
-      ],
-      rules: {
-        "react/jsx-props-no-spreading": "off"
       }
     },
     {
