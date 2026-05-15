@@ -1,6 +1,4 @@
-# eslint-config-react-tracktor
-
-[![npm version](https://badge.fury.io/js/eslint-config-react-tracktor.svg)](https://badge.fury.io/js/eslint-config-react-tracktor)
+# @getsoren/eslint-config-react-soren
 
 A set of opinionated [ESLint](http://eslint.org) rules for react projects
 
@@ -12,7 +10,7 @@ A set of opinionated [ESLint](http://eslint.org) rules for react projects
 ## Installation
 
 ```console
-yarn add eslint-config-react-tracktor -D
+yarn add @getsoren/eslint-config-react-soren -D
 ```
 
 ## Usage
@@ -21,7 +19,7 @@ Create a file named `.eslintrc` in your root project and extends config :
 
 ```json
 {
-  "extends": "eslint-config-react-tracktor",
+  "extends": "@getsoren/eslint-config-react-soren",
   "rules": {
     "...": "..."
   },
@@ -31,7 +29,7 @@ Create a file named `.eslintrc` in your root project and extends config :
 
 ## Specific rules
 
-For better compatibility with generated api files, 
+For better compatibility with generated api files,
 some rules are disabled inside `src/api` folder.
 
 ```json

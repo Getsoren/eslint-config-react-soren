@@ -1,17 +1,17 @@
 {
-  "name": "eslint-config-react-tracktor",
-  "description": "Tracktor ESLint config",
+  "name": "@getsoren/eslint-config-react-soren",
+  "description": "Shared ESLint config for React projects",
   "license": "ISC",
   "version": "1.14.0",
   "repository": {
     "type": "git",
-    "url": "git@github.com:Tracktor/eslint-config-react-tracktor.git"
+    "url": "git+https://github.com/getsoren/eslint-config-react-soren.git"
   },
   "author": "Mickaël Austoni",
   "bugs": {
-    "url": "https://github.com/Tracktor/eslint-config-react-tracktor/issues"
+    "url": "https://github.com/getsoren/eslint-config-react-soren/issues"
   },
-  "homepage": "https://github.com/Tracktor/eslint-config-react-tracktor#readme",
+  "homepage": "https://github.com/getsoren/eslint-config-react-soren#readme",
   "main": "index.js",
   "files": [
     "index.js"
@@ -38,5 +38,15 @@
     "linter",
     "javascript",
     "typescript"
-  ]
+  ],
+  "scripts": {
+    "release": "commit-and-tag-version"
+  },
+  "commit-and-tag-version": {
+    "releaseCommitMessageFormat": "chore(release): {{currentTag}} [skip ci]",
+    "tagPrefix": ""
+  },
+  "devDependencies": {
+    "commit-and-tag-version": "^12.6.0"
+  }
 }
