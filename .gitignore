@@ -14,3 +14,4 @@
 *.iml
 .vscode
 .idea
+.npmrc
